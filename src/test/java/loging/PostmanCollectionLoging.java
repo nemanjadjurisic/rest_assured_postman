@@ -21,7 +21,7 @@ public class PostmanCollectionLoging {
     @BeforeClass
     public void setup() {
         RestAssured.baseURI = "https://api.getpostman.com";
-        RestAssured.basePath = "/com/postman/collections";
+        RestAssured.basePath = "/com/postman/collections_tests";
     }
 
     @Test

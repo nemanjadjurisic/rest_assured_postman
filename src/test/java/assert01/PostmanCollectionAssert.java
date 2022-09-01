@@ -1,14 +1,8 @@
 package assert01;
 
 import io.restassured.RestAssured;
-import io.restassured.response.Response;
-import com.postman.models.PostmanCollectionModel;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
@@ -20,7 +14,7 @@ public class PostmanCollectionAssert {
     @BeforeClass
     public void setup() {
         RestAssured.baseURI = "https://api.getpostman.com";
-        RestAssured.basePath = "/com/postman/collections";
+        RestAssured.basePath = "/com/postman/collections_tests";
         RestAssured.rootPath = "collection.info";
     }
 

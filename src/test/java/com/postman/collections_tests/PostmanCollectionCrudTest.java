@@ -1,9 +1,8 @@
-package com.postman.collections;
+package com.postman.collections_tests;
 
 import com.postman.common.RestUtilities;
 import com.postman.constants.Path;
 import com.postman.constants.Uid;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
@@ -15,7 +14,6 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;

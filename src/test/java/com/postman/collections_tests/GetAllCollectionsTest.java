@@ -1,7 +1,7 @@
-package com.postman.collections;
+package com.postman.collections_tests;
 
 import com.postman.common.RestUtilities;
-import com.postman.constants.Auth;
+import com.postman.constants.EndPoints;
 import com.postman.constants.Path;
 import com.postman.constants.Uid;
 import io.restassured.response.Response;
@@ -27,7 +27,7 @@ public class GetAllCollectionsTest {
         resSpec = RestUtilities.getResponseSpecification();
     }
 
-    @Test
+    @Test(groups = {"Group1"})
     public void getAllCollections1() {
         given()
             .spec(reqSpec).queryParam("workspace", Uid.WORKSPACE_MYWORKSPACE)
@@ -49,12 +49,11 @@ public class GetAllCollectionsTest {
                 .spec(resSpec);
     }
 
-//    @Test
-//    public void getAllCollections3() {
-//        RestUtilities.setEndPoint("");
-//        Response res = RestUtilities.getResponse(RestUtilities.createQueryParam(reqSpec, "workspace", Uid.WORKSPACE_MYWORKSPACE), "get");
-//
-//
-//    }
+    @Test
+    public void getAllCollections3() {
+        RestUtilities.setEndPoint(EndPoints.WORKSPACE_EP);
+        Response res = RestUtilities.getResponse(RestUtilities.createQueryParam(reqSpec, "workspace", Uid.WORKSPACE_MYWORKSPACE), "get");
+        System.out.println(res);
+    }
 
 }

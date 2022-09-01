@@ -4,7 +4,6 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import com.postman.models.PostmanCollectionModel;
-import org.hamcrest.Matchers;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -24,7 +23,7 @@ public class PostmanCollectionExtract {
     @BeforeClass
     public void setup() {
         RestAssured.baseURI = "https://api.getpostman.com";
-        RestAssured.basePath = "/com/postman/collections";
+        RestAssured.basePath = "/com/postman/collections_tests";
     }
 
 //    @Test
