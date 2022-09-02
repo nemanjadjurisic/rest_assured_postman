@@ -49,11 +49,11 @@ public class GetAllCollectionsTest {
                 .spec(resSpec);
     }
 
-    @Test
-    public void getAllCollections3() {
-        RestUtilities.setEndPoint(EndPoints.WORKSPACE_EP);
-        Response res = RestUtilities.getResponse(RestUtilities.createQueryParam(reqSpec, "workspace", Uid.WORKSPACE_MYWORKSPACE), "get");
-        System.out.println(res);
-    }
+//    @Test
+//    public void getAllCollections3() {
+//        RestUtilities.setEndPoint(EndPoints.WORKSPACE_EP);
+//        Response res = RestUtilities.getResponse(RestUtilities.createQueryParam(reqSpec, "workspace", Uid.WORKSPACE_MYWORKSPACE), "get");
+//        System.out.println(res);
+//    }
 
 }

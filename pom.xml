@@ -67,8 +67,7 @@
                             <threadCount>10</threadCount>
                             <skipTests>false</skipTests>
                             <skip>false</skip>
-                            <groups>mta1</groups>
-                            <argLine>-Dproperties=properties.CQA1A2101.mta1.json</argLine>
+                            <groups>Group1</groups>
                         </configuration>
                     </plugin>
                 </plugins>
