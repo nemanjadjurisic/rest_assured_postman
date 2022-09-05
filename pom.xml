@@ -66,9 +66,9 @@
                             <parallel>classes</parallel>
                             <threadCount>10</threadCount>
                             <skipTests>false</skipTests>
-                            <argLine>-Dhudson.plugins.git.GitSCM.ALLOW_LOCAL_CHECKOUT=true</argLine>
+<!--                            <argLine>-Dhudson.plugins.git.GitSCM.ALLOW_LOCAL_CHECKOUT=true</argLine>-->
                             <skip>false</skip>
-                            <groups>Group1</groups>
+                            <classesDirectory>Group1</classesDirectory>
                         </configuration>
                     </plugin>
                 </plugins>
