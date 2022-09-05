@@ -34,7 +34,7 @@ public class PostmanCollectionCrudTest {
         resSpec = RestUtilities.getResponseSpecification();
     }
 
-    @Test
+    @Test(groups = {"Group2"})
     public void postmanCollectionCreate(){
         Map<String, String> infoMap = new HashMap<String, String>();
         infoMap.put("name", collectionName);
@@ -67,7 +67,7 @@ public class PostmanCollectionCrudTest {
 
     }
 
-    @Test(dependsOnMethods = {"postmanCollectionCreate"})
+    @Test(dependsOnMethods = {"postmanCollectionCreate"}, groups = {"Group2"})
     public void postmanCollectionGet(){
 
         Response response =
@@ -84,7 +84,7 @@ public class PostmanCollectionCrudTest {
         System.out.println("Name of the collection is: " + name);
     }
 
-    @Test(dependsOnMethods = {"postmanCollectionCreate", "postmanCollectionGet"})
+    @Test(dependsOnMethods = {"postmanCollectionCreate", "postmanCollectionGet"}, groups = {"Group2"})
     public void postmanCollectionUpdate(){
         Map<String, String> infoMap = new HashMap<String, String>();
         infoMap.put("name", collectionUpdated);
@@ -112,7 +112,7 @@ public class PostmanCollectionCrudTest {
             .spec(resSpec);
     }
 
-    @Test(dependsOnMethods = {"postmanCollectionCreate", "postmanCollectionGet", "postmanCollectionUpdate"})
+    @Test(dependsOnMethods = {"postmanCollectionCreate", "postmanCollectionGet", "postmanCollectionUpdate"}, groups = {"Group2"})
     public void postmanCollectionGetUpdated(){
         Response response =
         given()
@@ -128,7 +128,7 @@ public class PostmanCollectionCrudTest {
         System.out.println("Name of the collection is: " + name);
     }
 
-    @Test(dependsOnMethods = {"postmanCollectionCreate", "postmanCollectionGet", "postmanCollectionUpdate", "postmanCollectionGetUpdated"})
+    @Test(dependsOnMethods = {"postmanCollectionCreate", "postmanCollectionGet", "postmanCollectionUpdate", "postmanCollectionGetUpdated"}, groups = {"Group2"})
     public void postmanCollectionDelete(){
         given()
             .spec(reqSpec)
