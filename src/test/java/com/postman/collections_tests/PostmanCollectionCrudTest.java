@@ -27,7 +27,7 @@ public class PostmanCollectionCrudTest {
     String collectionUpdated = "Collection_" + RandomStringUtils.randomAlphanumeric(5);
 
 
-    @BeforeClass
+    @BeforeClass(groups = {"Group2"})
     public void setup() {
         reqSpec = RestUtilities.getRequestSpecification();
         reqSpec.basePath(Path.COLLECTIONS);

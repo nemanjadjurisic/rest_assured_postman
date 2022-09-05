@@ -19,7 +19,7 @@ public class GetAllCollectionsTest {
     RequestSpecification reqSpec;
     ResponseSpecification resSpec;
 
-    @BeforeClass
+    @BeforeClass(groups = {"Group1"})
     public void setup() {
         reqSpec = RestUtilities.getRequestSpecification();
         reqSpec.basePath(Path.COLLECTIONS);
