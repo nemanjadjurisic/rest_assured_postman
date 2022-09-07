@@ -86,7 +86,7 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.7.1</version>
                 <configuration>
-                    <outputDirectory>target/surefire-report</outputDirectory>
+                    <outputDirectory>C:/ProgramData/Jenkins/.jenkins/workspace/PostmanCollectionAPI_maven/target/surefire-reports</outputDirectory>
                 </configuration>
             </plugin>
                 <plugin>
@@ -94,7 +94,7 @@
                     <artifactId>maven-surefire-report-plugin</artifactId>
                     <version>3.0.0-M7</version>
                     <configuration>
-                        <outputDirectory>target/surefire-report</outputDirectory>
+                        <outputDirectory>C:/ProgramData/Jenkins/.jenkins/workspace/PostmanCollectionAPI_maven/target/surefire-reports</outputDirectory>
                     </configuration>
                 </plugin>
             <plugin>
@@ -103,7 +103,7 @@
                 <version>3.0.0-M6</version>
                 <configuration>
                     <systemPropertyVariables>
-                        <outputDirectory>target/surefire-report</outputDirectory>
+                        <outputDirectory>C:/ProgramData/Jenkins/.jenkins/workspace/PostmanCollectionAPI_maven/target/surefire-reports</outputDirectory>
                         <allure.results.directory>target/allure-results</allure.results.directory>
                         <reportDirectory>allure-report</reportDirectory>
                     </systemPropertyVariables>
@@ -128,7 +128,7 @@
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>3.0.0-M7</version>
                 <configuration>
-                    <outputDirectory>target/surefire-reports</outputDirectory>
+                    <outputDirectory>C:/ProgramData/Jenkins/.jenkins/workspace/PostmanCollectionAPI_maven/target/surefire-reports</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>
