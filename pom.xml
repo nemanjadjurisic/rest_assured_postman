@@ -103,6 +103,7 @@
                 <version>3.0.0-M6</version>
                 <configuration>
                     <systemPropertyVariables>
+                        <outputDirectory>target/surefire-report</outputDirectory>
                         <allure.results.directory>target/allure-results</allure.results.directory>
                         <reportDirectory>allure-report</reportDirectory>
                     </systemPropertyVariables>
@@ -127,7 +128,7 @@
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>3.0.0-M7</version>
                 <configuration>
-                    <outputDirectory>${basedir}/target/surefire-reports</outputDirectory>
+                    <outputDirectory>target/surefire-reports</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>
