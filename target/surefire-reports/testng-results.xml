@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-07T11:29:30 CEST" name="Surefire suite" finished-at="2022-09-07T11:29:43 CEST" duration-ms="12827">
+    <groups>
+      <group name="Group1">
+        <method signature="GetAllCollectionsTest.getAllCollections1()[pri:0, instance:com.postman.collections_tests.GetAllCollectionsTest@13df2a8c]" name="getAllCollections1" class="com.postman.collections_tests.GetAllCollectionsTest"/>
+      </group> <!-- Group1 -->
+      <group name="Group2">
+        <method signature="PostmanCollectionCrudTest.postmanCollectionCreate()[pri:0, instance:com.postman.collections_tests.PostmanCollectionCrudTest@7ba8c737]" name="postmanCollectionCreate" class="com.postman.collections_tests.PostmanCollectionCrudTest"/>
+        <method signature="PostmanCollectionCrudTest.postmanCollectionGet()[pri:0, instance:com.postman.collections_tests.PostmanCollectionCrudTest@7ba8c737]" name="postmanCollectionGet" class="com.postman.collections_tests.PostmanCollectionCrudTest"/>
+        <method signature="PostmanCollectionCrudTest.postmanCollectionUpdate()[pri:0, instance:com.postman.collections_tests.PostmanCollectionCrudTest@7ba8c737]" name="postmanCollectionUpdate" class="com.postman.collections_tests.PostmanCollectionCrudTest"/>
+        <method signature="PostmanCollectionCrudTest.postmanCollectionGetUpdated()[pri:0, instance:com.postman.collections_tests.PostmanCollectionCrudTest@7ba8c737]" name="postmanCollectionGetUpdated" class="com.postman.collections_tests.PostmanCollectionCrudTest"/>
+        <method signature="PostmanCollectionCrudTest.postmanCollectionDelete()[pri:0, instance:com.postman.collections_tests.PostmanCollectionCrudTest@7ba8c737]" name="postmanCollectionDelete" class="com.postman.collections_tests.PostmanCollectionCrudTest"/>
+      </group> <!-- Group2 -->
+    </groups>
+    <test started-at="2022-09-07T11:29:30 CEST" name="Surefire test" finished-at="2022-09-07T11:29:43 CEST" duration-ms="12827">
+      <class name="testsuite01.TemperatureAnomalyTest">
+        <test-method signature="anualAverageTemperature()[pri:0, instance:testsuite01.TemperatureAnomalyTest@1890516e]" started-at="2022-09-07T11:29:41 CEST" name="anualAverageTemperature" finished-at="2022-09-07T11:29:43 CEST" duration-ms="2135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- anualAverageTemperature -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testsuite01.TemperatureAnomalyTest@1890516e]" started-at="2022-09-07T11:29:41 CEST" name="setup" finished-at="2022-09-07T11:29:41 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- testsuite01.TemperatureAnomalyTest -->
+      <class name="com.postman.collections_tests.GetAllCollectionsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.postman.collections_tests.GetAllCollectionsTest@13df2a8c]" started-at="2022-09-07T11:29:30 CEST" name="setup" finished-at="2022-09-07T11:29:31 CEST" duration-ms="508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getAllCollections1()[pri:0, instance:com.postman.collections_tests.GetAllCollectionsTest@13df2a8c]" started-at="2022-09-07T11:29:31 CEST" name="getAllCollections1" finished-at="2022-09-07T11:29:33 CEST" duration-ms="2304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllCollections1 -->
+        <test-method signature="getAllCollections2()[pri:0, instance:com.postman.collections_tests.GetAllCollectionsTest@13df2a8c]" started-at="2022-09-07T11:29:33 CEST" name="getAllCollections2" finished-at="2022-09-07T11:29:34 CEST" duration-ms="1003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllCollections2 -->
+      </class> <!-- com.postman.collections_tests.GetAllCollectionsTest -->
+      <class name="com.postman.collections_tests.PostmanCollectionCrudTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.postman.collections_tests.PostmanCollectionCrudTest@7ba8c737]" started-at="2022-09-07T11:29:34 CEST" name="setup" finished-at="2022-09-07T11:29:34 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="postmanCollectionCreate()[pri:0, instance:com.postman.collections_tests.PostmanCollectionCrudTest@7ba8c737]" started-at="2022-09-07T11:29:34 CEST" name="postmanCollectionCreate" finished-at="2022-09-07T11:29:36 CEST" duration-ms="1630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postmanCollectionCreate -->
+        <test-method signature="postmanCollectionGet()[pri:0, instance:com.postman.collections_tests.PostmanCollectionCrudTest@7ba8c737]" started-at="2022-09-07T11:29:36 CEST" name="postmanCollectionGet" finished-at="2022-09-07T11:29:37 CEST" depends-on-methods="com.postman.collections_tests.PostmanCollectionCrudTest.postmanCollectionCreate" duration-ms="907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postmanCollectionGet -->
+        <test-method signature="postmanCollectionUpdate()[pri:0, instance:com.postman.collections_tests.PostmanCollectionCrudTest@7ba8c737]" started-at="2022-09-07T11:29:37 CEST" name="postmanCollectionUpdate" finished-at="2022-09-07T11:29:39 CEST" depends-on-methods="com.postman.collections_tests.PostmanCollectionCrudTest.postmanCollectionCreate, com.postman.collections_tests.PostmanCollectionCrudTest.postmanCollectionGet" duration-ms="1829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postmanCollectionUpdate -->
+        <test-method signature="postmanCollectionGetUpdated()[pri:0, instance:com.postman.collections_tests.PostmanCollectionCrudTest@7ba8c737]" started-at="2022-09-07T11:29:39 CEST" name="postmanCollectionGetUpdated" finished-at="2022-09-07T11:29:40 CEST" depends-on-methods="com.postman.collections_tests.PostmanCollectionCrudTest.postmanCollectionUpdate, com.postman.collections_tests.PostmanCollectionCrudTest.postmanCollectionCreate, com.postman.collections_tests.PostmanCollectionCrudTest.postmanCollectionGet" duration-ms="852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postmanCollectionGetUpdated -->
+        <test-method signature="postmanCollectionDelete()[pri:0, instance:com.postman.collections_tests.PostmanCollectionCrudTest@7ba8c737]" started-at="2022-09-07T11:29:40 CEST" name="postmanCollectionDelete" finished-at="2022-09-07T11:29:41 CEST" depends-on-methods="com.postman.collections_tests.PostmanCollectionCrudTest.postmanCollectionUpdate, com.postman.collections_tests.PostmanCollectionCrudTest.postmanCollectionCreate, com.postman.collections_tests.PostmanCollectionCrudTest.postmanCollectionGet, com.postman.collections_tests.PostmanCollectionCrudTest.postmanCollectionGetUpdated" duration-ms="1547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postmanCollectionDelete -->
+      </class> <!-- com.postman.collections_tests.PostmanCollectionCrudTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
