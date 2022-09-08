@@ -131,9 +131,10 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>3.0.0-M7</version>
                         <configuration>
-                            <suiteXmlFiles>
-                                <file>GetAllCollections.xml</file>
-                            </suiteXmlFiles>
+                            <groups>Group1</groups>
+<!--                            <suiteXmlFiles>-->
+<!--                                <file>GetAllCollections.xml</file>-->
+<!--                            </suiteXmlFiles>-->
                             <rerunFailingTestsCount>4</rerunFailingTestsCount>
                             <parallel>classes</parallel>
                             <threadCount>10</threadCount>
@@ -154,9 +155,10 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>3.0.0-M7</version>
                         <configuration>
-                            <suiteXmlFiles>
-                                <file>E2ECollections.xml</file>
-                            </suiteXmlFiles>
+                            <groups>Group2</groups>
+<!--                            <suiteXmlFiles>-->
+<!--                                <file>E2ECollections.xml</file>-->
+<!--                            </suiteXmlFiles>-->
                             <rerunFailingTestsCount>4</rerunFailingTestsCount>
                             <parallel>classes</parallel>
                             <threadCount>10</threadCount>
