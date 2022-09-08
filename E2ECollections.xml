@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="E2E Collections">
+    <test name="E2E Collections Test">
+        <groups>
+            <run>
+                <include name="Group2" />
+            </run>
+        </groups>
+    </test>
+</suite>
