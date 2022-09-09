@@ -19,7 +19,7 @@ public class PostEmployeeObject {
         RestAssured.basePath = "/api";
     }
 
-    @Test
+//    @Test
     public void postEmployeeValidateObject(){
         EmployeeAddModel employee = new EmployeeAddModel();
         employee.setName("Pera Peric");
@@ -36,7 +36,7 @@ public class PostEmployeeObject {
                 .contentType(ContentType.JSON);
     }
 
-    @Test
+//    @Test
     public void postEmployeePrint(){
         EmployeeAddModel employee = new EmployeeAddModel();
         employee.setName("Pera Peric");

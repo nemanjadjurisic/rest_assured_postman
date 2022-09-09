@@ -18,7 +18,7 @@ public class TemperatureAnomalyTest {
         RestAssured.basePath = "/cag";
     }
 
-    @Test
+//    @Test
     public void anualAverageTemperature(){
         Response response =
                 given()

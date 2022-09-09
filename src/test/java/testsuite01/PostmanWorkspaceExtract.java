@@ -22,7 +22,7 @@ public class PostmanWorkspaceExtract {
         RestAssured.basePath = "/workspaces";
     }
 
-    @Test
+//    @Test
     public void postmanWorkspacePostExtract(){
         Map<String, String> workspaceMap = new HashMap<String, String>();
         workspaceMap.put("name", "TestWorkspace02");
@@ -43,7 +43,7 @@ public class PostmanWorkspaceExtract {
                 .contentType(ContentType.JSON);
     }
 
-    @Test
+//    @Test
     public void postmanWorkspacePostPrintExtract(){
         Map<String, String> workspaceMap = new HashMap<>();
         workspaceMap.put("name", "TestWorkspace04");
@@ -64,7 +64,7 @@ public class PostmanWorkspaceExtract {
 
     }
 
-    @Test
+//    @Test
     public void postmanWorkspaceGetExtract(){
         Response response =
                 given()
@@ -76,7 +76,7 @@ public class PostmanWorkspaceExtract {
     }
 
 
-    @Test
+//    @Test
     public void postmanWorkspaceDeletePrintExtract(){
         Response response =
         given()
@@ -87,7 +87,7 @@ public class PostmanWorkspaceExtract {
 
     }
 
-    @Test
+//    @Test
     public void postmanWorkspaceDeleteValidateExtract(){
                 given()
                         .header("X-API-Key", "PMAK-63035d0a63863d6f23a90f64-ee47e6e2af6dda75ec0f85b20b91d6eca6")

@@ -58,7 +58,7 @@ public class PostmanCollectionExtract {
 //        System.out.println("Collection Uid is: " + collectionUid);
 //    }
 
-    @Test(dependsOnMethods = {"postmanCollectionPostE2E"})
+//    @Test(dependsOnMethods = {"postmanCollectionPostE2E"})
     public void postmanCollectionGetExtractE2E(){
         Response response =
         given()
@@ -72,7 +72,7 @@ public class PostmanCollectionExtract {
         System.out.println("Name of the collection is: " + name);
     }
 
-    @Test(dependsOnMethods = {"postmanCollectionPostE2E", "postmanCollectionGetExtractE2E"})
+//    @Test(dependsOnMethods = {"postmanCollectionPostE2E", "postmanCollectionGetExtractE2E"})
     public void postmanCollectionPutExtractE2E(){
         Map<String, String> infoMap = new HashMap<String, String>();
         infoMap.put("name", "UpdatedCollection03");
@@ -105,7 +105,7 @@ public class PostmanCollectionExtract {
         System.out.println("Updated name is: " + name);
     }
 
-    @Test(dependsOnMethods = {"postmanCollectionPostE2E", "postmanCollectionGetExtractE2E", "postmanCollectionPutExtractE2E"})
+//    @Test(dependsOnMethods = {"postmanCollectionPostE2E", "postmanCollectionGetExtractE2E", "postmanCollectionPutExtractE2E"})
     public void postmanCollectionDeleteExtract(){
         Response response =
         given()
@@ -119,7 +119,7 @@ public class PostmanCollectionExtract {
         System.out.println(response.body().asPrettyString());
     }
 
-    @Test(dependsOnMethods = {"postmanCollectionPostE2E", "postmanCollectionGetExtractE2E", "postmanCollectionPutExtractE2E"})
+//    @Test(dependsOnMethods = {"postmanCollectionPostE2E", "postmanCollectionGetExtractE2E", "postmanCollectionPutExtractE2E"})
     public void postmanCollectionDeleteExtractPath(){
         Response response =
             given()

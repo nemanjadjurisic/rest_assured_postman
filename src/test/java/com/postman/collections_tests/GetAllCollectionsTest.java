@@ -19,7 +19,7 @@ public class GetAllCollectionsTest {
     RequestSpecification reqSpec;
     ResponseSpecification resSpec;
 
-    @BeforeClass(groups = {"Group1"})
+//    @BeforeClass(groups = {"Group1"})
     public void setup() {
         reqSpec = RestUtilities.getRequestSpecification();
         reqSpec.basePath(Path.COLLECTIONS);
@@ -27,7 +27,7 @@ public class GetAllCollectionsTest {
         resSpec = RestUtilities.getResponseSpecification();
     }
 
-    @Test(groups = {"Group1"})
+//    @Test(groups = {"Group1"})
     public void getAllCollections1() {
         given()
             .spec(reqSpec).queryParam("workspace", Uid.WORKSPACE_MYWORKSPACE)
@@ -38,7 +38,7 @@ public class GetAllCollectionsTest {
             .spec(resSpec);
     }
 
-    @Test
+//    @Test
     public void getAllCollections2() {
         given()
             .spec(RestUtilities.createQueryParam(reqSpec, "workspace", Uid.WORKSPACE_MYWORKSPACE))

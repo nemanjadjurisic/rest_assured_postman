@@ -24,7 +24,7 @@ public class PostmanCollectionLoging {
         RestAssured.basePath = "/com/postman/collections_tests";
     }
 
-    @Test
+//    @Test
     public void postmanCollectionPostLoging(){
         Map<String, String> infoMap = new HashMap<String, String>();
         infoMap.put("name", "TestCollection03");
@@ -63,7 +63,7 @@ public class PostmanCollectionLoging {
             .statusCode(200);
     }
 
-    @Test(dependsOnMethods = {"postmanCollectionPostE2E"})
+//    @Test(dependsOnMethods = {"postmanCollectionPostE2E"})
     public void postmanCollectionGetExtractE2E(){
         Response response =
         given()
@@ -110,7 +110,7 @@ public class PostmanCollectionLoging {
 //        System.out.println("Updated name is: " + name);
 //    }
 
-    @Test(dependsOnMethods = {"postmanCollectionPostE2E", "postmanCollectionGetExtractE2E", "postmanCollectionPutExtractE2E"})
+//    @Test(dependsOnMethods = {"postmanCollectionPostE2E", "postmanCollectionGetExtractE2E", "postmanCollectionPutExtractE2E"})
     public void postmanCollectionDeleteExtract(){
         Response response =
         given()
@@ -124,7 +124,7 @@ public class PostmanCollectionLoging {
         System.out.println(response.body().asPrettyString());
     }
 
-    @Test(dependsOnMethods = {"postmanCollectionPostE2E", "postmanCollectionGetExtractE2E", "postmanCollectionPutExtractE2E"})
+//    @Test(dependsOnMethods = {"postmanCollectionPostE2E", "postmanCollectionGetExtractE2E", "postmanCollectionPutExtractE2E"})
     public void postmanCollectionDeleteExtractPath(){
         Response response =
             given()

@@ -16,7 +16,7 @@ public class GetCoctails {
         RestAssured.basePath = "/api";
     }
 
-    @Test
+//    @Test
     public void margaritaStatusCode(){
         given()
             .param("s", "margarita")
@@ -26,7 +26,7 @@ public class GetCoctails {
             .statusCode(200);
     }
 
-    @Test
+//    @Test
     public void filterIngrediantsResponse(){
         Response response =
         given()
@@ -38,7 +38,7 @@ public class GetCoctails {
         System.out.println(response.body().asPrettyString());
     }
 
-    @Test
+//    @Test
     public void filterIngrediantsResponseValiodation(){
         given()
             .param("i", "Bitter lemon")

@@ -17,7 +17,7 @@ public class PostEmployeeBody {
         RestAssured.basePath = "/api";
     }
 
-    @Test
+//    @Test
     public void postEmployeeValidate(){
         given()
             .body("{" +
@@ -33,7 +33,7 @@ public class PostEmployeeBody {
                 .contentType(ContentType.JSON);
     }
 
-    @Test
+//    @Test
     public void postEmployeePrint(){
         Response response =
         given()
