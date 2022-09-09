@@ -1,6 +1,5 @@
 package com.cocktails.common;
 
-import com.cocktails.constants.Auth;
 import com.cocktails.constants.Path;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;

@@ -1,8 +1,7 @@
 package com.postman.common;
 
-import com.postman.constants.Auth;
+import com.postman.constants.AuthPostman;
 import com.postman.constants.Path;
-import com.postman.constants.Uid;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -17,7 +16,6 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.lessThan;
 
 public class RestUtilities {
@@ -35,7 +33,7 @@ public class RestUtilities {
     public static RequestSpecification getRequestSpecification() {
         REQUEST_BUILDER = new RequestSpecBuilder();
         REQUEST_BUILDER.setBaseUri(Path.BASE_URI);
-        REQUEST_BUILDER.addHeader("X-API-Key", Auth.API_KEY);
+        REQUEST_BUILDER.addHeader("X-API-Key", AuthPostman.API_KEY);
 //        REQUEST_BUILDER.addQueryParam("workspace", workspace);
         REQUEST_SPEC = REQUEST_BUILDER.build();
         return REQUEST_SPEC;
